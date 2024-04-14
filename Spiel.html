@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>
+        Meine erstes W�rfelprogramm
+    </title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Harald Holzner">
+    <link rel="stylesheet" href="spiel.css" />
+
+</head>
+<body>
+    <h1 id="ueberschrift">Wurfspiel</h1>
+    Mein Name:
+    <button id="Name"></button>
+    <br><br>
+    <div id="container1">
+        <button id="Wirf" type="button" onclick="fWirf()">Wirf</button>
+        <br>
+        <br>
+        <p id="uber1">Mein Wurf &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Sein Wurf</p>
+        <button id="Resultat">0</button>
+        <button id="ResultatG">0</button>
+        <br>
+        <p id="uber2">Mein Score &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Sein Score</p>
+        <button id="MeinScore">0</button>
+        <button id="GegnerScore">0</button>
+        <br>
+        <br>
+    </div>
+    <div id="container2">
+        <br>
+        <br>
+        <button type="button" onclick="fNeues()">Neues Spiel</button>
+        <br>
+        <textarea id="Liste" style="height:50px; width:150px;">
+        </textarea><br><br>
+        <button type="button" onclick="fSAuswahl()">Spiel auswaehlen</button>
+        <br>
+        <select onchange="fonchange()" name="Auswahl" id="Auswahl" size="3" style="width:150px;">
+            <option></option>
+        </select>
+        <br>
+        <br>
+    </div>
+
+    <br>
+    <label for="text">Ablauf</label>
+    <br>
+    <textarea id="Ablauf" style="height:50px; width:150px;">
+    </textarea><br><br>
+    <label for="text">Test</label> <br>
+     <textarea id="Test" style="height:50px; width:150px;">
+    </textarea><br><br>
+
+    <script src="Spiel.js"></script>
+
+            
+</body>
+</html>
